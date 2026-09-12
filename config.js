@@ -18,7 +18,7 @@ const FOTOS_PATH = "fotos";
 //            (só faz sentido usar junto com "fixo")
 const CARGOS = [
   { id: "fed",   label: "Deputado Federal", cargo: 6,  digitos: 4 },
-  { id: "est",   label: "Deputado Estadual", cargo: 7,  digitos: 5, fixo: "45177", travado: true },
+  { id: "est",   label: "Deputado Estadual", cargo: 7,  digitos: 5, fixo: "00000", travado: true },
   { id: "sen1",  label: "Senador (1º voto)", cargo: 5,  digitos: 3 },
   { id: "sen2",  label: "Senador (2º voto)", cargo: 5,  digitos: 3 },
   { id: "gov",   label: "Governador",        cargo: 3,  digitos: 2 },

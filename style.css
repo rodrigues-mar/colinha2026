@@ -3,9 +3,9 @@
   --azul-claro: #eef0fb;
   --borda: #d8dcf5;
   --verde: #baff29;
-  --amarelo: #162e79;
+  --amarelo: #f5c121;
   --amarelo2: #fbc11a;
-  --grad:linear-gradient(118deg, #162e79 0%, #003f84 46%, #005da9 100%)
+  --grad:linear-gradient(118deg, #21d307 0%, #07d371 46%, #052ae7 100%)
 }
 
 *{box-sizing:border-box;}
@@ -29,7 +29,7 @@ body{
   margin-bottom:0px;
   font-size:28px;
   font-weight:800;
-  color: var(--amarelo2);
+  color:var(--amarelo2);
   margin:0;
   line-height: 1;
 }
@@ -65,12 +65,11 @@ body{
   width: 420px;
   max-width: 100%;
   background: #fff;
-  border: 4px solid var(--amarelo2);
+  border: 4px solid var(--amarelo);
   border-radius: 24px;
   padding: 20px;
-  position: relative; /* Adicionado: Essencial para posicionar a borda interna */
+  position: relative; 
   
-  /* box-shadow: 0 0 0 3px #1a2b6b inset;  <-- REMOVIDO para consertar o html2canvas */
 }
 
 /* Cria borda azul interna de forma segura para o html2canvas */
@@ -81,7 +80,7 @@ body{
   left: 0;
   right: 0;
   bottom: 0;
-  border: 3px solid var(--azul);
+  border: 5px solid var(--azul);
   border-radius: 20px; 
   pointer-events: none; 
 }
@@ -199,9 +198,6 @@ body{
   font-weight:bold;
   color:#333;
   margin-top:16px;
-  letter-spacing: 0.5px;
-  word-spacing: 2px;
-}
 }
 
 .btn-gerar{

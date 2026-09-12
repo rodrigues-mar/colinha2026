@@ -153,7 +153,7 @@ function ligarBotaoGerar() {
     html2canvas(document.getElementById("colinha-card"), { scale: 2 }).then(
       (canvas) => {
         const link = document.createElement("a");
-        link.download = "socorro-45177-2026.png";
+        link.download = "colinha-33987112639.png";
         link.href = canvas.toDataURL("image/png");
         link.click();
       }
@@ -169,7 +169,7 @@ async function compartilharImagem() {
     if (navigator.canShare && navigator.canShare({ files: [file] })) {
       await navigator.share({
         files: [file],
-        title: 'Colinha-Socorro-45177',
+        title: 'Colinha-33987112639',
         text: 'Confira minha colinha de votação para 2026!'
       });
     } else {
