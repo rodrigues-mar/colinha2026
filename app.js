@@ -135,13 +135,13 @@ function atualizarCargo(cargoCfg) {
     nomeEl.textContent = candidato.nome;
     partidoEl.textContent = candidato.partido;
     avatarEl.src = candidato.foto;
-    avatarEl.onerror = () => (avatarEl.src = "AVATAR_VAZIO"); // sem foto encontrada
+    avatarEl.onerror = () => (avatarEl.src = AVATAR_VAZIO); // sem foto encontrada
     hintEl.style.display = "none";
     officeEl.classList.add("filled");
   } else {
     nomeEl.textContent = "";
     partidoEl.textContent = "";
-    avatarEl.src = "";
+    avatarEl.src = AVATAR_VAZIO;
     hintEl.style.display = "block";
     officeEl.classList.remove("filled");
   }
