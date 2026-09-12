@@ -199,6 +199,9 @@ body{
   font-weight:bold;
   color:#333;
   margin-top:16px;
+  letter-spacing: 0.5px;
+  word-spacing: 2px;
+}
 }
 
 .btn-gerar{
