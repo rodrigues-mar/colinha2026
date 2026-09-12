@@ -5,7 +5,7 @@
   --verde: #baff29;
   --amarelo: #f5c121;
   --amarelo2: #fbc11a;
-  --grad:linear-gradient(118deg, #21d307 0%, #07d371 46%, #052ae7 100%)
+  --grad:linear-gradient(118deg, #165d08 0%, #0a2ab7 46%, #052ae7 100%)
 }
 
 *{box-sizing:border-box;}
