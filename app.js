@@ -111,6 +111,9 @@ function ligarEventos(cargoCfg) {
 }
 
 // -- 4. Busca o candidato no índice e atualiza a tela ----------------------
+
+const AVATAR_VAZIO = "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ccc'><path d='M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z'/></svg>";
+
 function atualizarCargo(cargoCfg) {
   const inputs = [
     ...document.querySelectorAll(`#digits-${cargoCfg.id} .digit`),
@@ -132,7 +135,7 @@ function atualizarCargo(cargoCfg) {
     nomeEl.textContent = candidato.nome;
     partidoEl.textContent = candidato.partido;
     avatarEl.src = candidato.foto;
-    avatarEl.onerror = () => (avatarEl.src = ""); // sem foto encontrada
+    avatarEl.onerror = () => (avatarEl.src = "AVATAR_VAZIO"); // sem foto encontrada
     hintEl.style.display = "none";
     officeEl.classList.add("filled");
   } else {
@@ -150,7 +153,7 @@ function ligarBotaoGerar() {
     html2canvas(document.getElementById("colinha-card"), { scale: 2 }).then(
       (canvas) => {
         const link = document.createElement("a");
-        link.download = "bruno-farias-2026.png";
+        link.download = "socorro-45177-2026.png";
         link.href = canvas.toDataURL("image/png");
         link.click();
       }
@@ -166,7 +169,7 @@ async function compartilharImagem() {
     if (navigator.canShare && navigator.canShare({ files: [file] })) {
       await navigator.share({
         files: [file],
-        title: 'Colinha-Bruno-1077',
+        title: 'Colinha-Socorro-45177',
         text: 'Confira minha colinha de votação para 2026!'
       });
     } else {

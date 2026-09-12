@@ -1,10 +1,10 @@
 :root{
-  --azul: #1a2b6b;
+  --azul: #162e79;
   --azul-claro: #eef0fb;
-  --borda: #d8dcf5;
+  --borda: #fdc300;
   --verde: #baff29;
-  --amarelo: #fdc300;
-  --grad:linear-gradient(118deg, #00559a 0%, #003f84 46%, #005da9 100%)
+  --amarelo: #d8dcf5;
+  --grad:linear-gradient(118deg, #162e79 0%, #003f84 46%, #005da9 100%)
 }
 
 *{box-sizing:border-box;}
