@@ -1,9 +1,10 @@
 :root{
   --azul: #162e79;
   --azul-claro: #eef0fb;
-  --borda: #fdc300;
+  --borda: #d8dcf5;
   --verde: #baff29;
-  --amarelo: #d8dcf5;
+  --amarelo: #162e79;
+  --amarelo2: #fbc11a;
   --grad:linear-gradient(118deg, #162e79 0%, #003f84 46%, #005da9 100%)
 }
 
@@ -28,7 +29,7 @@ body{
   margin-bottom:0px;
   font-size:28px;
   font-weight:800;
-  color:var(--amarelo);
+  color:var(--amarelo2);
   margin:0;
   line-height: 1;
 }
